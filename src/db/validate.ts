@@ -59,7 +59,15 @@ export function validateDatabase(input: unknown): ValidationResult {
   }
   if (errors.length) return { ok: false, errors };
 
-  const db = input as unknown as Database;
+  try {
+    return validateRecords(input as unknown as Database, errors, err);
+  } catch {
+    // A record is missing a nested field the checks below read (e.g. an invoice without totals).
+    return { ok: false, errors: [...errors, 'Some records are incomplete or have the wrong shape.'] };
+  }
+}
+
+function validateRecords(db: Database, errors: string[], err: (msg: string) => void): ValidationResult {
   const ids = (name: keyof Database['collections']) =>
     new Set(db.collections[name].map((r) => (r as { id: string }).id));
   const users = ids('users');

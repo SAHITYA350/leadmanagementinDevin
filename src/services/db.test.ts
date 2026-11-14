@@ -120,6 +120,17 @@ describe('recovery', () => {
     expect(notice.message).toMatch(/demo data was reloaded/);
     expect(db.getLeads()).toHaveLength(60);
   });
+
+  it('reseeds instead of crashing when a saved record is missing a nested field', () => {
+    db.init();
+    const damaged = stored();
+    delete damaged.collections.invoices[0].totals;
+    expect(validateDatabase(structuredClone(damaged)).ok).toBe(false);
+    localStorage.setItem(db.STORAGE_KEY, JSON.stringify(damaged));
+    refresh();
+    expect(db.init().outcome).toBe('reseeded-corrupt');
+    expect(db.previewImport(JSON.stringify(damaged)).ok).toBe(false);
+  });
 });
 
 describe('data tools', () => {

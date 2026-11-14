@@ -134,6 +134,20 @@ describe('recovery', () => {
 });
 
 describe('data tools', () => {
+  it('ignores stale counters in an imported file so new ids never repeat', () => {
+    db.exportJson(admin);
+    const file = JSON.parse(db.exportJson(admin));
+    file.sequences.AU -= 1;
+    const preview = db.previewImport(JSON.stringify(file));
+    expect(preview.ok).toBe(true);
+    db.importDatabase(preview.db!, admin);
+    refresh();
+    expect(db.init().outcome).toBe('loaded');
+    const ids = db.getAudit().map((a) => a.id);
+    expect(new Set(ids).size).toBe(ids.length);
+    expect(db.getAudit().at(-1)?.action).toBe('IMPORT');
+  });
+
   it('export then import brings back the same data', () => {
     db.mutate((d) => void (d.collections.leads[0].company = 'Exported Co'), { label: 'test' });
     const json = db.exportJson(admin);

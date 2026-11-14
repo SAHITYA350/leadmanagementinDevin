@@ -247,7 +247,11 @@ export function importDatabase(db: Database, actor: Actor): void {
   if (!checked.ok) throw new DbError('VALIDATION', checked.errors[0]);
   saveBackup();
   const next = checked.db;
-  next.sequences = { ...computeSequences(next.collections), ...next.sequences };
+  const fromIds = computeSequences(next.collections);
+  for (const [prefix, n] of Object.entries(fromIds)) {
+    const given = next.sequences[prefix];
+    next.sequences[prefix] = typeof given === 'number' && given > n ? given : n;
+  }
   next.revision = (state?.revision ?? 0) + 1;
   appendAudit(next, {
     actorId: actor.id,

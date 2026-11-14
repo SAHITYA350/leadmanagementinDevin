@@ -1,0 +1,171 @@
+{
+  "company": {
+    "name": "Yash Earthing Solutions Pvt Ltd",
+    "address": "Plot 14, MIDC Bhosari, Pune, Maharashtra 411026",
+    "gstin": "27AABCY1234K1Z5",
+    "state": "Maharashtra",
+    "phone": "+912027120000",
+    "email": "sales@yashearthing.in",
+    "bank": {
+      "name": "HDFC Bank",
+      "account": "50200012345678",
+      "ifsc": "HDFC0001234",
+      "branch": "Bhosari, Pune"
+    },
+    "quoteTerms": [
+      "Prices are ex-works Pune. Freight extra as mentioned.",
+      "Payment: 50% advance, balance within 30 days of invoice.",
+      "Delivery: 7-10 working days from order confirmation.",
+      "Quotation valid for 30 days from the date of issue.",
+      "Installation charges, if required, will be quoted separately."
+    ]
+  },
+  "assignment": {
+    "roundRobinEnabled": true,
+    "checkedInOnly": true,
+    "maxActiveLeadsPerExec": 15,
+    "slaHours": 2,
+    "rrPointerExecutive": "USR-005",
+    "rrPointerBackOffice": "USR-006"
+  },
+  "scoring": {
+    "sourceWeights": {
+      "REFERRAL": 25,
+      "WEBSITE": 20,
+      "DIRECT": 20,
+      "JUSTDIAL": 15,
+      "TRADEINDIA": 15,
+      "EXCEL_IMPORT": 10
+    },
+    "valueBands": [
+      {
+        "minPaise": 100000000,
+        "points": 25
+      },
+      {
+        "minPaise": 50000000,
+        "points": 20
+      },
+      {
+        "minPaise": 20000000,
+        "points": 15
+      },
+      {
+        "minPaise": 5000000,
+        "points": 10
+      },
+      {
+        "minPaise": 0,
+        "points": 5
+      }
+    ],
+    "cityTiers": {
+      "Pune": 1,
+      "Mumbai": 1,
+      "Bengaluru": 1,
+      "Ahmedabad": 1,
+      "Nashik": 2,
+      "Nagpur": 2,
+      "Aurangabad": 2,
+      "Panaji": 2,
+      "Kolhapur": 3,
+      "Satara": 3
+    }
+  },
+  "inventory": {
+    "defaultLowStockAt": 20
+  },
+  "finance": {
+    "recoveryAfterDays": 30,
+    "gstOnFreight": false
+  },
+  "simulator": {
+    "autoMode": false,
+    "intervalSec": 20
+  },
+  "permissions": {},
+  "masters": {
+    "leadSources": [
+      "JUSTDIAL",
+      "TRADEINDIA",
+      "WEBSITE",
+      "REFERRAL",
+      "DIRECT",
+      "EXCEL_IMPORT"
+    ],
+    "lostReasons": [
+      "PRICE_HIGH",
+      "COMPETITOR",
+      "NO_REQUIREMENT",
+      "NO_RESPONSE",
+      "BUDGET_ISSUE",
+      "OTHER"
+    ],
+    "cities": [
+      {
+        "name": "Pune",
+        "state": "Maharashtra",
+        "tier": 1
+      },
+      {
+        "name": "Mumbai",
+        "state": "Maharashtra",
+        "tier": 1
+      },
+      {
+        "name": "Nashik",
+        "state": "Maharashtra",
+        "tier": 2
+      },
+      {
+        "name": "Nagpur",
+        "state": "Maharashtra",
+        "tier": 2
+      },
+      {
+        "name": "Aurangabad",
+        "state": "Maharashtra",
+        "tier": 2
+      },
+      {
+        "name": "Kolhapur",
+        "state": "Maharashtra",
+        "tier": 3
+      },
+      {
+        "name": "Satara",
+        "state": "Maharashtra",
+        "tier": 3
+      },
+      {
+        "name": "Ahmedabad",
+        "state": "Gujarat",
+        "tier": 1
+      },
+      {
+        "name": "Bengaluru",
+        "state": "Karnataka",
+        "tier": 1
+      },
+      {
+        "name": "Panaji",
+        "state": "Goa",
+        "tier": 2
+      }
+    ],
+    "states": [
+      "Maharashtra",
+      "Gujarat",
+      "Karnataka",
+      "Goa",
+      "Madhya Pradesh",
+      "Telangana",
+      "Delhi"
+    ]
+  },
+  "anchorDate": "2026-11-14T06:30:00.000Z",
+  "seed": {
+    "seedVersion": 1,
+    "seededAt": null
+  }
+}

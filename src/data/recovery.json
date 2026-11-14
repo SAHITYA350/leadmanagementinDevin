@@ -1,0 +1,251 @@
+[
+  {
+    "id": "RC-0001",
+    "createdAt": "2026-09-11T04:30:00.000Z",
+    "updatedAt": "2026-09-20T04:30:00.000Z",
+    "createdBy": "SYSTEM",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "invoiceId": "INV-2608-0001",
+    "leadId": "LD-260717-001",
+    "assignedTo": "USR-006",
+    "trigger": "AUTO_OVERDUE",
+    "status": "RECOVERED",
+    "calls": [
+      {
+        "id": "RC-0001-C1",
+        "by": "USR-006",
+        "promisedAmountPaise": null,
+        "promiseDate": null,
+        "notes": "Accounts head on leave, call next week.",
+        "at": "2026-09-12T04:30:00.000Z",
+        "outcome": "CALL_AGAIN"
+      },
+      {
+        "id": "RC-0001-C2",
+        "by": "USR-006",
+        "promisedAmountPaise": null,
+        "promiseDate": null,
+        "notes": "RTGS done for full balance.",
+        "at": "2026-09-20T04:30:00.000Z",
+        "outcome": "PAID_IN_FULL"
+      }
+    ],
+    "nextActionAt": null,
+    "recoveredAt": "2026-09-20T04:30:00.000Z"
+  },
+  {
+    "id": "RC-0002",
+    "createdAt": "2026-10-01T04:30:00.000Z",
+    "updatedAt": "2026-10-03T04:30:00.000Z",
+    "createdBy": "SYSTEM",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "invoiceId": "INV-2608-0002",
+    "leadId": "LD-260717-001",
+    "assignedTo": "USR-006",
+    "trigger": "AUTO_OVERDUE",
+    "status": "RECOVERED",
+    "calls": [
+      {
+        "id": "RC-0002-C1",
+        "by": "USR-006",
+        "promisedAmountPaise": null,
+        "promiseDate": null,
+        "notes": "Cheque collected from site office.",
+        "at": "2026-10-03T04:30:00.000Z",
+        "outcome": "PAID_IN_FULL"
+      }
+    ],
+    "nextActionAt": null,
+    "recoveredAt": "2026-10-03T04:30:00.000Z"
+  },
+  {
+    "id": "RC-0003",
+    "createdAt": "2026-09-20T04:30:00.000Z",
+    "updatedAt": "2026-09-20T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "invoiceId": "INV-2609-0001",
+    "leadId": "LD-260821-001",
+    "assignedTo": "USR-006",
+    "trigger": "MANUAL",
+    "status": "CLOSED",
+    "calls": [
+      {
+        "id": "RC-0003-C1",
+        "by": "USR-006",
+        "promisedAmountPaise": null,
+        "promiseDate": null,
+        "notes": "Customer asked for a copy of the E-Way bill. Sent; case closed.",
+        "at": "2026-09-20T04:30:00.000Z",
+        "outcome": "CALL_AGAIN"
+      }
+    ],
+    "nextActionAt": null,
+    "recoveredAt": null
+  },
+  {
+    "id": "RC-0004",
+    "createdAt": "2026-10-06T04:30:00.000Z",
+    "updatedAt": "2026-11-12T05:30:00.000Z",
+    "createdBy": "SYSTEM",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "invoiceId": "INV-2609-0001",
+    "leadId": "LD-260821-001",
+    "assignedTo": "USR-006",
+    "trigger": "AUTO_OVERDUE",
+    "status": "PROMISED",
+    "calls": [
+      {
+        "id": "RC-0004-C1",
+        "by": "USR-006",
+        "promisedAmountPaise": 9836250,
+        "promiseDate": "2026-11-19T06:30:00.000Z",
+        "notes": "Will release balance after month-end closing.",
+        "at": "2026-11-12T05:30:00.000Z",
+        "outcome": "PROMISE_TO_PAY"
+      }
+    ],
+    "nextActionAt": "2026-11-19T06:30:00.000Z",
+    "recoveredAt": null
+  },
+  {
+    "id": "RC-0005",
+    "createdAt": "2026-09-29T04:30:00.000Z",
+    "updatedAt": "2026-09-29T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "invoiceId": "INV-2609-0002",
+    "leadId": "LD-260828-001",
+    "assignedTo": "USR-006",
+    "trigger": "MANUAL",
+    "status": "CLOSED",
+    "calls": [
+      {
+        "id": "RC-0005-C1",
+        "by": "USR-006",
+        "promisedAmountPaise": null,
+        "promiseDate": null,
+        "notes": "Purchase team needed GST invoice re-sent. Done; case closed.",
+        "at": "2026-09-29T04:30:00.000Z",
+        "outcome": "CALL_AGAIN"
+      }
+    ],
+    "nextActionAt": null,
+    "recoveredAt": null
+  },
+  {
+    "id": "RC-0006",
+    "createdAt": "2026-10-12T04:30:00.000Z",
+    "updatedAt": "2026-11-08T06:30:00.000Z",
+    "createdBy": "SYSTEM",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "invoiceId": "INV-2609-0002",
+    "leadId": "LD-260828-001",
+    "assignedTo": "USR-006",
+    "trigger": "AUTO_OVERDUE",
+    "status": "DISPUTED",
+    "calls": [
+      {
+        "id": "RC-0006-C1",
+        "by": "USR-006",
+        "promisedAmountPaise": null,
+        "promiseDate": null,
+        "notes": "Customer says 2 electrodes were damaged in transit. Manager to review.",
+        "at": "2026-11-08T06:30:00.000Z",
+        "outcome": "DISPUTE"
+      }
+    ],
+    "nextActionAt": "2026-11-15T06:30:00.000Z",
+    "recoveredAt": null
+  },
+  {
+    "id": "RC-0007",
+    "createdAt": "2026-10-17T04:30:00.000Z",
+    "updatedAt": "2026-10-17T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "invoiceId": "INV-2609-0003",
+    "leadId": "LD-260913-001",
+    "assignedTo": "USR-006",
+    "trigger": "MANUAL",
+    "status": "CLOSED",
+    "calls": [
+      {
+        "id": "RC-0007-C1",
+        "by": "USR-006",
+        "promisedAmountPaise": null,
+        "promiseDate": null,
+        "notes": "Reminder call before due date. Closed.",
+        "at": "2026-10-17T04:30:00.000Z",
+        "outcome": "CALL_AGAIN"
+      }
+    ],
+    "nextActionAt": null,
+    "recoveredAt": null
+  },
+  {
+    "id": "RC-0008",
+    "createdAt": "2026-10-28T04:30:00.000Z",
+    "updatedAt": "2026-11-11T06:30:00.000Z",
+    "createdBy": "SYSTEM",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "invoiceId": "INV-2609-0003",
+    "leadId": "LD-260913-001",
+    "assignedTo": "USR-006",
+    "trigger": "AUTO_OVERDUE",
+    "status": "OPEN",
+    "calls": [
+      {
+        "id": "RC-0008-C1",
+        "by": "USR-006",
+        "promisedAmountPaise": null,
+        "promiseDate": null,
+        "notes": "Phone switched off.",
+        "at": "2026-11-11T06:30:00.000Z",
+        "outcome": "UNREACHABLE"
+      }
+    ],
+    "nextActionAt": "2026-11-14T09:30:00.000Z",
+    "recoveredAt": null
+  },
+  {
+    "id": "RC-0009",
+    "createdAt": "2026-11-07T04:30:00.000Z",
+    "updatedAt": "2026-11-07T04:30:00.000Z",
+    "createdBy": "SYSTEM",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "invoiceId": "INV-2610-0001",
+    "leadId": "LD-260923-001",
+    "assignedTo": "USR-006",
+    "trigger": "AUTO_OVERDUE",
+    "status": "OPEN",
+    "calls": [],
+    "nextActionAt": "2026-11-14T08:30:00.000Z",
+    "recoveredAt": null
+  },
+  {
+    "id": "RC-0010",
+    "createdAt": "2026-11-11T04:30:00.000Z",
+    "updatedAt": "2026-11-11T04:30:00.000Z",
+    "createdBy": "SYSTEM",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "invoiceId": "INV-2610-0002",
+    "leadId": "LD-260927-001",
+    "assignedTo": "USR-006",
+    "trigger": "AUTO_OVERDUE",
+    "status": "OPEN",
+    "calls": [],
+    "nextActionAt": "2026-11-15T06:30:00.000Z",
+    "recoveredAt": null
+  }
+]

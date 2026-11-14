@@ -1,0 +1,66 @@
+[
+  {
+    "id": "AU-0001",
+    "at": "2025-10-10T06:30:00.000Z",
+    "actorId": "SYSTEM",
+    "actorRole": "SYSTEM",
+    "action": "CREATE",
+    "entityType": "settings",
+    "entityId": "settings",
+    "before": null,
+    "after": {
+      "note": "Initial company setup"
+    },
+    "reason": null,
+    "actionId": null
+  },
+  {
+    "id": "AU-0002",
+    "at": "2026-09-30T06:30:00.000Z",
+    "actorId": "USR-002",
+    "actorRole": "SALES_MANAGER",
+    "action": "CREATE",
+    "entityType": "target",
+    "entityId": "TG-001",
+    "before": null,
+    "after": {
+      "periodKey": "2026-11"
+    },
+    "reason": null,
+    "actionId": null
+  },
+  {
+    "id": "AU-0003",
+    "at": "2026-11-04T06:30:00.000Z",
+    "actorId": "USR-006",
+    "actorRole": "BACK_OFFICE",
+    "action": "STOCK_EDIT",
+    "entityType": "product",
+    "entityId": "PRD-005",
+    "before": {
+      "onHand": 40
+    },
+    "after": {
+      "onHand": 15
+    },
+    "reason": "Physical stock count: 25 bags damaged by water leakage",
+    "actionId": null
+  },
+  {
+    "id": "AU-0004",
+    "at": "2026-11-13T03:30:00.000Z",
+    "actorId": "USR-005",
+    "actorRole": "SALES_EXECUTIVE",
+    "action": "CHECK_OUT",
+    "entityType": "user",
+    "entityId": "USR-005",
+    "before": {
+      "checkedIn": true
+    },
+    "after": {
+      "checkedIn": false
+    },
+    "reason": null,
+    "actionId": null
+  }
+]

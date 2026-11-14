@@ -1,0 +1,500 @@
+[
+  {
+    "id": "INV-2608-0001",
+    "createdAt": "2026-08-11T04:30:00.000Z",
+    "updatedAt": "2026-09-20T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "orderId": "SO-2026-0001",
+    "leadId": "LD-260717-001",
+    "dispatchIds": [
+      "DSP-0001"
+    ],
+    "invoiceDate": "2026-08-11T04:30:00.000Z",
+    "taxMode": "INTRA",
+    "lines": [
+      {
+        "lineId": "L1",
+        "productId": "PRD-005",
+        "productName": "Chemical Earthing Compound (25 kg bag)",
+        "hsn": "38249900",
+        "unit": "Bag",
+        "qty": 5,
+        "ratePaise": 135000,
+        "discountPct": 5,
+        "lineTotalPaise": 641250
+      },
+      {
+        "lineId": "L2",
+        "productId": "PRD-002",
+        "productName": "ESE Lightning Arrester",
+        "hsn": "85354010",
+        "unit": "Nos",
+        "qty": 2,
+        "ratePaise": 3850000,
+        "discountPct": 0,
+        "lineTotalPaise": 7700000
+      },
+      {
+        "lineId": "L3",
+        "productId": "PRD-003",
+        "productName": "GI Earthing Strip 25x3mm",
+        "hsn": "72123090",
+        "unit": "Mtr",
+        "qty": 238,
+        "ratePaise": 9500,
+        "discountPct": 10,
+        "lineTotalPaise": 2034900
+      }
+    ],
+    "totals": {
+      "subtotalPaise": 10636000,
+      "discountPaise": 259850,
+      "taxablePaise": 10376150,
+      "cgstPaise": 933854,
+      "sgstPaise": 933854,
+      "igstPaise": 0,
+      "freightPaise": 0,
+      "grandTotalPaise": 12243858
+    },
+    "ewayBillNo": "752536119773",
+    "vehicleNo": "MH12AB6267",
+    "receivedPaise": 12243858,
+    "balancePaise": 0,
+    "status": "FULL_RECEIVED"
+  },
+  {
+    "id": "INV-2608-0002",
+    "createdAt": "2026-08-31T04:30:00.000Z",
+    "updatedAt": "2026-10-03T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "orderId": "SO-2026-0001",
+    "leadId": "LD-260717-001",
+    "dispatchIds": [
+      "DSP-0002"
+    ],
+    "invoiceDate": "2026-08-31T04:30:00.000Z",
+    "taxMode": "INTRA",
+    "lines": [
+      {
+        "lineId": "L1",
+        "productId": "PRD-005",
+        "productName": "Chemical Earthing Compound (25 kg bag)",
+        "hsn": "38249900",
+        "unit": "Bag",
+        "qty": 5,
+        "ratePaise": 135000,
+        "discountPct": 5,
+        "lineTotalPaise": 641250
+      },
+      {
+        "lineId": "L2",
+        "productId": "PRD-002",
+        "productName": "ESE Lightning Arrester",
+        "hsn": "85354010",
+        "unit": "Nos",
+        "qty": 2,
+        "ratePaise": 3850000,
+        "discountPct": 0,
+        "lineTotalPaise": 7700000
+      },
+      {
+        "lineId": "L3",
+        "productId": "PRD-003",
+        "productName": "GI Earthing Strip 25x3mm",
+        "hsn": "72123090",
+        "unit": "Mtr",
+        "qty": 239,
+        "ratePaise": 9500,
+        "discountPct": 10,
+        "lineTotalPaise": 2043450
+      }
+    ],
+    "totals": {
+      "subtotalPaise": 10645500,
+      "discountPaise": 260800,
+      "taxablePaise": 10384700,
+      "cgstPaise": 934623,
+      "sgstPaise": 934623,
+      "igstPaise": 0,
+      "freightPaise": 0,
+      "grandTotalPaise": 12253946
+    },
+    "ewayBillNo": "168396608849",
+    "vehicleNo": "MH12KT6603",
+    "receivedPaise": 12253946,
+    "balancePaise": 0,
+    "status": "FULL_RECEIVED"
+  },
+  {
+    "id": "INV-2609-0001",
+    "createdAt": "2026-09-05T04:30:00.000Z",
+    "updatedAt": "2026-09-08T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "orderId": "SO-2026-0002",
+    "leadId": "LD-260821-001",
+    "dispatchIds": [
+      "DSP-0003"
+    ],
+    "invoiceDate": "2026-09-05T04:30:00.000Z",
+    "taxMode": "INTRA",
+    "lines": [
+      {
+        "lineId": "L1",
+        "productId": "PRD-002",
+        "productName": "ESE Lightning Arrester",
+        "hsn": "85354010",
+        "unit": "Nos",
+        "qty": 4,
+        "ratePaise": 3850000,
+        "discountPct": 0,
+        "lineTotalPaise": 15400000
+      },
+      {
+        "lineId": "L2",
+        "productId": "PRD-006",
+        "productName": "Polymer Earth Pit Cover",
+        "hsn": "39259010",
+        "unit": "Nos",
+        "qty": 13,
+        "ratePaise": 75000,
+        "discountPct": 0,
+        "lineTotalPaise": 975000
+      }
+    ],
+    "totals": {
+      "subtotalPaise": 16375000,
+      "discountPaise": 0,
+      "taxablePaise": 16375000,
+      "cgstPaise": 1473750,
+      "sgstPaise": 1473750,
+      "igstPaise": 0,
+      "freightPaise": 350000,
+      "grandTotalPaise": 19672500
+    },
+    "ewayBillNo": "314129854081",
+    "vehicleNo": "MH12PQ3440",
+    "receivedPaise": 9836250,
+    "balancePaise": 9836250,
+    "status": "PARTIAL_RECEIVED"
+  },
+  {
+    "id": "INV-2609-0002",
+    "createdAt": "2026-09-11T04:30:00.000Z",
+    "updatedAt": "2026-09-11T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "orderId": "SO-2026-0003",
+    "leadId": "LD-260828-001",
+    "dispatchIds": [
+      "DSP-0004"
+    ],
+    "invoiceDate": "2026-09-11T04:30:00.000Z",
+    "taxMode": "INTRA",
+    "lines": [
+      {
+        "lineId": "L1",
+        "productId": "PRD-002",
+        "productName": "ESE Lightning Arrester",
+        "hsn": "85354010",
+        "unit": "Nos",
+        "qty": 3,
+        "ratePaise": 3850000,
+        "discountPct": 5,
+        "lineTotalPaise": 10972500
+      },
+      {
+        "lineId": "L2",
+        "productId": "PRD-003",
+        "productName": "GI Earthing Strip 25x3mm",
+        "hsn": "72123090",
+        "unit": "Mtr",
+        "qty": 246,
+        "ratePaise": 9500,
+        "discountPct": 0,
+        "lineTotalPaise": 2337000
+      },
+      {
+        "lineId": "L3",
+        "productId": "PRD-005",
+        "productName": "Chemical Earthing Compound (25 kg bag)",
+        "hsn": "38249900",
+        "unit": "Bag",
+        "qty": 9,
+        "ratePaise": 135000,
+        "discountPct": 7.5,
+        "lineTotalPaise": 1123875
+      }
+    ],
+    "totals": {
+      "subtotalPaise": 15102000,
+      "discountPaise": 668625,
+      "taxablePaise": 14433375,
+      "cgstPaise": 1299004,
+      "sgstPaise": 1299004,
+      "igstPaise": 0,
+      "freightPaise": 250000,
+      "grandTotalPaise": 17281383
+    },
+    "ewayBillNo": "279016948995",
+    "vehicleNo": "MH12KT6993",
+    "receivedPaise": 0,
+    "balancePaise": 17281383,
+    "status": "PENDING"
+  },
+  {
+    "id": "INV-2609-0003",
+    "createdAt": "2026-09-27T04:30:00.000Z",
+    "updatedAt": "2026-10-04T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "orderId": "SO-2026-0004",
+    "leadId": "LD-260913-001",
+    "dispatchIds": [
+      "DSP-0005"
+    ],
+    "invoiceDate": "2026-09-27T04:30:00.000Z",
+    "taxMode": "INTRA",
+    "lines": [
+      {
+        "lineId": "L1",
+        "productId": "PRD-006",
+        "productName": "Polymer Earth Pit Cover",
+        "hsn": "39259010",
+        "unit": "Nos",
+        "qty": 20,
+        "ratePaise": 75000,
+        "discountPct": 0,
+        "lineTotalPaise": 1500000
+      },
+      {
+        "lineId": "L2",
+        "productId": "PRD-004",
+        "productName": "Copper Earth Busbar",
+        "hsn": "74071090",
+        "unit": "Nos",
+        "qty": 2,
+        "ratePaise": 620000,
+        "discountPct": 10,
+        "lineTotalPaise": 1116000
+      },
+      {
+        "lineId": "L3",
+        "productId": "PRD-001",
+        "productName": "Chemical Pipe-in-Pipe Earth Electrode 3 Mtr",
+        "hsn": "85359090",
+        "unit": "Nos",
+        "qty": 7,
+        "ratePaise": 450000,
+        "discountPct": 5,
+        "lineTotalPaise": 2992500
+      }
+    ],
+    "totals": {
+      "subtotalPaise": 5890000,
+      "discountPaise": 281500,
+      "taxablePaise": 5608500,
+      "cgstPaise": 504765,
+      "sgstPaise": 504765,
+      "igstPaise": 0,
+      "freightPaise": 0,
+      "grandTotalPaise": 6618030
+    },
+    "ewayBillNo": "222116623644",
+    "vehicleNo": "MH12AB9168",
+    "receivedPaise": 1985409,
+    "balancePaise": 4632621,
+    "status": "PARTIAL_RECEIVED"
+  },
+  {
+    "id": "INV-2610-0001",
+    "createdAt": "2026-10-07T04:30:00.000Z",
+    "updatedAt": "2026-10-07T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "orderId": "SO-2026-0005",
+    "leadId": "LD-260923-001",
+    "dispatchIds": [
+      "DSP-0006"
+    ],
+    "invoiceDate": "2026-10-07T04:30:00.000Z",
+    "taxMode": "INTRA",
+    "lines": [
+      {
+        "lineId": "L1",
+        "productId": "PRD-001",
+        "productName": "Chemical Pipe-in-Pipe Earth Electrode 3 Mtr",
+        "hsn": "85359090",
+        "unit": "Nos",
+        "qty": 16,
+        "ratePaise": 450000,
+        "discountPct": 5,
+        "lineTotalPaise": 6840000
+      },
+      {
+        "lineId": "L2",
+        "productId": "PRD-006",
+        "productName": "Polymer Earth Pit Cover",
+        "hsn": "39259010",
+        "unit": "Nos",
+        "qty": 26,
+        "ratePaise": 75000,
+        "discountPct": 7.5,
+        "lineTotalPaise": 1803750
+      },
+      {
+        "lineId": "L3",
+        "productId": "PRD-005",
+        "productName": "Chemical Earthing Compound (25 kg bag)",
+        "hsn": "38249900",
+        "unit": "Bag",
+        "qty": 8,
+        "ratePaise": 135000,
+        "discountPct": 7.5,
+        "lineTotalPaise": 999000
+      }
+    ],
+    "totals": {
+      "subtotalPaise": 10230000,
+      "discountPaise": 587250,
+      "taxablePaise": 9642750,
+      "cgstPaise": 867848,
+      "sgstPaise": 867848,
+      "igstPaise": 0,
+      "freightPaise": 250000,
+      "grandTotalPaise": 11628446
+    },
+    "ewayBillNo": "988752740147",
+    "vehicleNo": "MH12PQ1621",
+    "receivedPaise": 0,
+    "balancePaise": 11628446,
+    "status": "PENDING"
+  },
+  {
+    "id": "INV-2610-0002",
+    "createdAt": "2026-10-11T04:30:00.000Z",
+    "updatedAt": "2026-10-11T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "orderId": "SO-2026-0006",
+    "leadId": "LD-260927-001",
+    "dispatchIds": [
+      "DSP-0007"
+    ],
+    "invoiceDate": "2026-10-11T04:30:00.000Z",
+    "taxMode": "INTRA",
+    "lines": [
+      {
+        "lineId": "L1",
+        "productId": "PRD-004",
+        "productName": "Copper Earth Busbar",
+        "hsn": "74071090",
+        "unit": "Nos",
+        "qty": 2,
+        "ratePaise": 620000,
+        "discountPct": 7.5,
+        "lineTotalPaise": 1147000
+      },
+      {
+        "lineId": "L2",
+        "productId": "PRD-005",
+        "productName": "Chemical Earthing Compound (25 kg bag)",
+        "hsn": "38249900",
+        "unit": "Bag",
+        "qty": 3,
+        "ratePaise": 135000,
+        "discountPct": 7.5,
+        "lineTotalPaise": 374625
+      }
+    ],
+    "totals": {
+      "subtotalPaise": 1645000,
+      "discountPaise": 123375,
+      "taxablePaise": 1521625,
+      "cgstPaise": 136946,
+      "sgstPaise": 136946,
+      "igstPaise": 0,
+      "freightPaise": 350000,
+      "grandTotalPaise": 2145517
+    },
+    "ewayBillNo": "840396076733",
+    "vehicleNo": "MH12XY4865",
+    "receivedPaise": 0,
+    "balancePaise": 2145517,
+    "status": "PENDING"
+  },
+  {
+    "id": "INV-2611-0001",
+    "createdAt": "2026-11-09T04:30:00.000Z",
+    "updatedAt": "2026-11-10T04:30:00.000Z",
+    "createdBy": "USR-006",
+    "updatedBy": "USR-006",
+    "deletedAt": null,
+    "orderId": "SO-2026-0007",
+    "leadId": "LD-261026-001",
+    "dispatchIds": [
+      "DSP-0008"
+    ],
+    "invoiceDate": "2026-11-09T04:30:00.000Z",
+    "taxMode": "INTRA",
+    "lines": [
+      {
+        "lineId": "L1",
+        "productId": "PRD-003",
+        "productName": "GI Earthing Strip 25x3mm",
+        "hsn": "72123090",
+        "unit": "Mtr",
+        "qty": 167,
+        "ratePaise": 9500,
+        "discountPct": 0,
+        "lineTotalPaise": 1586500
+      },
+      {
+        "lineId": "L2",
+        "productId": "PRD-005",
+        "productName": "Chemical Earthing Compound (25 kg bag)",
+        "hsn": "38249900",
+        "unit": "Bag",
+        "qty": 4,
+        "ratePaise": 135000,
+        "discountPct": 10,
+        "lineTotalPaise": 486000
+      },
+      {
+        "lineId": "L3",
+        "productId": "PRD-001",
+        "productName": "Chemical Pipe-in-Pipe Earth Electrode 3 Mtr",
+        "hsn": "85359090",
+        "unit": "Nos",
+        "qty": 7,
+        "ratePaise": 450000,
+        "discountPct": 7.5,
+        "lineTotalPaise": 2913750
+      }
+    ],
+    "totals": {
+      "subtotalPaise": 5276500,
+      "discountPaise": 290250,
+      "taxablePaise": 4986250,
+      "cgstPaise": 448763,
+      "sgstPaise": 448763,
+      "igstPaise": 0,
+      "freightPaise": 0,
+      "grandTotalPaise": 5883776
+    },
+    "ewayBillNo": "647131697060",
+    "vehicleNo": "MH12PQ4182",
+    "receivedPaise": 1470944,
+    "balancePaise": 4412832,
+    "status": "PARTIAL_RECEIVED"
+  }
+]

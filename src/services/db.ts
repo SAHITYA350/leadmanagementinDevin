@@ -32,6 +32,8 @@ let state: Database | null = null;
 let lastNotice: LoadNotice | null = null;
 const listeners = new Set<Listener>();
 let storageListenerAttached = false;
+/** Exact text of STORAGE_KEY as this tab last read or wrote it; a different value means another tab saved. */
+let lastRaw: string | null = null;
 
 function read(key: string): unknown {
   const raw = localStorage.getItem(key);
@@ -45,7 +47,9 @@ function read(key: string): unknown {
 
 function write(key: string, db: Database) {
   try {
-    localStorage.setItem(key, JSON.stringify(db));
+    const raw = JSON.stringify(db);
+    localStorage.setItem(key, raw);
+    if (key === STORAGE_KEY) lastRaw = raw;
   } catch (e) {
     const quota = e instanceof DOMException && (e.name === 'QuotaExceededError' || e.code === 22);
     throw new DbError(
@@ -66,20 +70,26 @@ function systemAudit(db: Database, input: Omit<AuditInput, 'actorId' | 'actorRol
   appendAudit(db, { actorId: 'SYSTEM', actorRole: 'SYSTEM', ...input });
 }
 
+/** Adopts what another tab saved, so this tab never shows or saves over a stale copy. */
+function syncFromStorage(): boolean {
+  const raw = localStorage.getItem(STORAGE_KEY);
+  if (raw == null || raw === lastRaw) return false;
+  try {
+    const result = validateDatabase(JSON.parse(raw));
+    if (!result.ok) return false;
+    state = result.db;
+    lastRaw = raw;
+    return true;
+  } catch {
+    return false; // another tab wrote something unreadable; keep our copy
+  }
+}
+
 function attachStorageListener() {
   if (storageListenerAttached || typeof window === 'undefined') return;
   storageListenerAttached = true;
   window.addEventListener('storage', (e) => {
-    if (e.key !== STORAGE_KEY || e.newValue == null) return;
-    try {
-      const result = validateDatabase(JSON.parse(e.newValue));
-      if (result.ok && (!state || result.db.revision > state.revision)) {
-        state = result.db;
-        emit();
-      }
-    } catch {
-      /* another tab wrote something unreadable; keep our copy */
-    }
+    if (e.key === STORAGE_KEY && state && syncFromStorage()) emit();
   });
 }
 
@@ -97,6 +107,7 @@ export function init(nowMs: number = Date.now()): LoadNotice {
   const result = validateDatabase(stored);
   if (result.ok) {
     state = result.db;
+    lastRaw = localStorage.getItem(STORAGE_KEY);
     lastNotice = { outcome: 'loaded', message: null };
     return lastNotice;
   }
@@ -151,6 +162,7 @@ export interface MutateOptions {
  * A repeated `actionId` returns the first result without running the change again.
  */
 export function mutate<T>(fn: (draft: Database) => T, opts: MutateOptions): T {
+  if (state && syncFromStorage()) emit();
   const current = getState();
   if (opts.actionId) {
     const done = current.collections.actions.find((a) => a.actionId === opts.actionId);
@@ -307,4 +319,5 @@ export function setSessionUserId(id: string): void {
 export function __resetForTests(): void {
   state = null;
   lastNotice = null;
+  lastRaw = null;
 }

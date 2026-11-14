@@ -133,6 +133,32 @@ describe('recovery', () => {
   });
 });
 
+describe('two tabs', () => {
+  it('keeps a change saved by another tab when this tab saves next', () => {
+    db.init();
+    const otherTab = stored();
+    otherTab.collections.leads[0].company = 'Saved in other tab';
+    otherTab.revision += 1;
+    localStorage.setItem(db.STORAGE_KEY, JSON.stringify(otherTab));
+
+    db.mutate((d) => void (d.collections.leads[1].company = 'Saved in this tab'), { label: 'test' });
+
+    const leads = stored().collections.leads;
+    expect(leads[0].company).toBe('Saved in other tab');
+    expect(leads[1].company).toBe('Saved in this tab');
+    expect(stored().revision).toBe(otherTab.revision + 1);
+  });
+
+  it('shows what the other tab saved even when both tabs reached the same revision', () => {
+    db.mutate((d) => void (d.collections.leads[0].company = 'This tab'), { label: 'test' });
+    const otherTab = stored();
+    otherTab.collections.leads[0].company = 'Other tab won';
+    localStorage.setItem(db.STORAGE_KEY, JSON.stringify(otherTab));
+    window.dispatchEvent(new StorageEvent('storage', { key: db.STORAGE_KEY }));
+    expect(db.getLeads()[0].company).toBe('Other tab won');
+  });
+});
+
 describe('data tools', () => {
   it('ignores stale counters in an imported file so new ids never repeat', () => {
     db.exportJson(admin);
